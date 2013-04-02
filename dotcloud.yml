@@ -1,0 +1,6 @@
+flower:
+    type: python-worker
+    ports:
+        flower: http
+    processes:
+       flower: flower --port=$PORT_FLOWER
