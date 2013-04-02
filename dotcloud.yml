@@ -1,6 +1,5 @@
 flower:
     type: python-worker
-    approot: flower
     ports:
         flower: http
     processes:
