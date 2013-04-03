@@ -17,11 +17,11 @@ Augmenting your project to use Flower is easy:
 
     flower:
         type: python-worker
-    approot: flower
-    ports:
-        flower: http
-    processes:
-        flower: flower --port=$PORT_FLOWER --broker=$DOTCLOUD_DATA_REDIS_URL/0
+        approot: flower
+        ports:
+            flower: http
+        processes:
+            flower: flower --port=$PORT_FLOWER --broker=$DOTCLOUD_DATA_REDIS_URL/0
 
 .. note::  Your environment variables for your redis broker might be slightly different.  Also double check your database id.
 
